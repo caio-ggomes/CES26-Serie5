@@ -72,29 +72,17 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
         <p>{this.state.apiResponse}</p>
         <form onSubmit={this.handleSubmit} method="POST">
-          <label htmlFor="name">Nome:</label>
+          <label htmlFor="name">Nome: </label>
           <input className="form-control" type="text" name="name" onChange={this.handleInputChange} placeholder="Ex.: Fulano da Silva"></input>
-          <label htmlFor="name">Idade:</label>
+          <br /><br />
+          <label htmlFor="name">Idade: </label>
           <input className="form-control" type="number" name="age" onChange={this.handleInputChange} placeholder="Ex.: 42"></input>
+          <br /><br />
           <button className="btn btn-success" type="submit">Enviar</button>
         </form>
-        
+
       </div>
     );  
   }
