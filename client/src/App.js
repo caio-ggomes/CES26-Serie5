@@ -94,6 +94,7 @@ class App extends React.Component{
           <input className="form-control" type="number" name="age" onChange={this.handleInputChange} placeholder="Ex.: 42"></input>
           <button className="btn btn-success" type="submit">Enviar</button>
         </form>
+        
       </div>
     );  
   }
